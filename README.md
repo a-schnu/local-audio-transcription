@@ -1,4 +1,4 @@
-# Local-audio-transcription
+# local-audio-transcription
 A 100% local, VRAM-optimized pipeline for transcription + speaker diarization using Faster-Whisper and Pyannote. Built for 4GB GPUs but works everywhere!
 
 # 🎙️ Local Whisper + Pyannote Diarization (Optimized for 4GB GPUs)
