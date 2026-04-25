@@ -59,7 +59,7 @@ Windows PowerShell: $env:HF_TOKEN="your_hugging_face_token_here"
 🚀 Usage
 Here is the standard command to run the pipeline.
 
-Bash
+```bash
 python interview_transcriber_diarized.py \
   "path/to/your/audio_file.wav" \
   --diarization-config "pyannote/speaker-diarization-community-1" \
@@ -67,6 +67,7 @@ python interview_transcriber_diarized.py \
   --transcription-device cuda \
   --diarization-device cpu \
   --allow-online-model-resolution
+```
 Pro-Tips for Model Selection:
 Need more speed? Change --whisper-model "small" to "tiny".
 
