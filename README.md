@@ -33,7 +33,7 @@ pip install faster-whisper pyannote.audio av numpy
 # Install PyTorch with CUDA support (Crucial for GPU usage)
 # Check [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) for your specific CUDA version
 pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
-
+```
 
 🔑 Setup: Hugging Face & The "Fake Directory" Bypass
 Pyannote requires you to accept their user conditions on Hugging Face to use their diarization models.
@@ -75,10 +75,10 @@ Got an 8GB+ GPU? You can change --diarization-device cpu to cuda and upgrade Whi
 📂 Output Files
 The script doesn't just throw text at you; it builds a complete audit trail for your transcription:
 
-_transcript.txt: The final, human-readable transcript with speaker labels and timestamps.
+1. _transcript.txt: The final, human-readable transcript with speaker labels and timestamps.
 
-.rttm: Rich Transcription Time Marked. The universal standard file for speaker mapping, perfect for importing into video editors (like DaVinci Resolve) or research tools (like ELAN).
+2. .rttm: Rich Transcription Time Marked. The universal standard file for speaker mapping, perfect for importing into video editors (like DaVinci Resolve) or research tools (like ELAN).
 
-_report.json: The complete audit trail. Records exactly how long the pipeline took (RTF), which hardware was used, and the memory profile.
+3. _report.json: The complete audit trail. Records exactly how long the pipeline took (RTF), which hardware was used, and the memory profile.
 
-transcriber_state.sqlite: A persistent memory database. If you map "Speaker 1" to a real name, the SQLite DB remembers this for future runs!
+4. transcriber_state.sqlite: A persistent memory database. If you map "Speaker 1" to a real name, the SQLite DB remembers this for future runs!
